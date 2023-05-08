@@ -1,0 +1,9 @@
+.contactForm_input{
+  width: 350px;
+  height: 30px;
+}
+
+.contactForm_text{
+  font-size: 16px;
+  margin-left: 15px
+}
