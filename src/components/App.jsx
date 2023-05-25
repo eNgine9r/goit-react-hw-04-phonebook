@@ -12,8 +12,8 @@ export default function App() {
   const [filter, setFilter] = useState('');
 
   const duplicationCheck = newName => {
-    return contacts.find(({ name }) => name === newName);
-  };
+  return contacts.find(({ name }) => name.toLowerCase() === newName.toLowerCase());
+};
 
   const addContact = ({ name, number }) => {
     if (!duplicationCheck(name)) {
